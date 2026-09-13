@@ -1,14 +1,16 @@
 import argparse
-import sys
 import os
+import sys
+
 import torch
-import torch.nn as nn
+from torch import nn
 from torch.utils.data import Dataset
 
 # Add the parent directory to sys.path so we can import streamtrain without installing it
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from streamtrain import Trainer, StreamTrainConfig
+from streamtrain import StreamTrainConfig, Trainer
+
 
 class SyntheticDataset(Dataset):
     def __init__(self, num_samples: int = 1000, input_dim: int = 10):

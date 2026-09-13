@@ -1,12 +1,19 @@
-import unittest
 import os
 import shutil
-import torch
-import torch.nn as nn
-from streamtrain.config import StreamTrainConfig, ModelConfig, TrainingConfig, ResourcesConfig, CheckpointConfig, LoggingConfig
+import unittest
+
+from streamtrain.config import (
+    CheckpointConfig,
+    LoggingConfig,
+    ModelConfig,
+    ResourcesConfig,
+    StreamTrainConfig,
+    TrainingConfig,
+)
+from streamtrain.exceptions import OOMError
 from streamtrain.optimization.batch_size import BatchSizeOptimizer
 from streamtrain.recovery.checkpoint import CheckpointManager
-from streamtrain.exceptions import OOMError
+
 
 class TestStreamTrain(unittest.TestCase):
     def setUp(self):

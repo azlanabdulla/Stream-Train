@@ -1,6 +1,6 @@
 import logging
 import sys
-from datetime import datetime
+
 
 def setup_logger(name: str = "streamtrain", log_file: str = None) -> logging.Logger:
     logger = logging.getLogger(name)

@@ -1,7 +1,10 @@
-import yaml
 from dataclasses import dataclass
 from typing import Optional, Union
+
+import yaml
+
 from .exceptions import ConfigurationError
+
 
 @dataclass
 class ModelConfig:

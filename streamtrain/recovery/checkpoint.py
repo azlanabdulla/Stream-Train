@@ -1,9 +1,11 @@
-import os
 import glob
+import os
+from typing import Any, Dict, Optional
+
 import torch
-import shutil
-from typing import Dict, Any, Optional
+
 from ..exceptions import CheckpointError
+
 
 class CheckpointManager:
     def __init__(self, directory: str, keep_last: int = 3):

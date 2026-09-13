@@ -1,5 +1,6 @@
-from ..exceptions import OOMError
 import gc
+
+from ..exceptions import OOMError
 
 try:
     import torch

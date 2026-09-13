@@ -1,15 +1,16 @@
-import time
+from typing import Callable
+
 import torch
-import torch.nn as nn
-from typing import Optional, Callable
+from torch import nn
 from torch.utils.data import Dataset
+
 from .config import StreamTrainConfig
 from .data.streamer import DataStreamer
-from .resources.monitor import ResourceMonitor
+from .logging.logger import logger
 from .optimization.batch_size import BatchSizeOptimizer
 from .recovery.checkpoint import CheckpointManager
-from .logging.logger import logger
-from .exceptions import OOMError
+from .resources.monitor import ResourceMonitor
+
 
 class Trainer:
     def __init__(

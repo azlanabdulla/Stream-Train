@@ -1,8 +1,9 @@
-import psutil
 import platform
 import shutil
 import warnings
-from typing import Dict, Any, Optional
+from typing import Any, Dict, Optional
+
+import psutil
 
 try:
     import torch

@@ -1,9 +1,10 @@
 import argparse
 import sys
-import json
+
 from ..config import StreamTrainConfig
-from ..resources.monitor import ResourceMonitor
 from ..logging.logger import logger
+from ..resources.monitor import ResourceMonitor
+
 
 def cmd_system_info(args):
     monitor = ResourceMonitor()
@@ -37,7 +38,6 @@ def cmd_monitor(args):
     logger.info("Monitoring system resources (Ctrl+C to stop)...")
     monitor = ResourceMonitor()
     try:
-        import time
         while True:
             info = monitor.get_system_info()
             ram_gb = monitor.get_current_ram_usage_gb()

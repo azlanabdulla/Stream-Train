@@ -1,6 +1,8 @@
+from typing import Any, Iterator, Optional
+
 import torch
-from torch.utils.data import DataLoader, Dataset, IterableDataset
-from typing import Optional, Iterator, Any
+from torch.utils.data import DataLoader, Dataset
+
 
 class DataStreamer:
     """

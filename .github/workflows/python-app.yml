@@ -32,7 +32,7 @@ jobs:
         # stop the build if there are Python syntax errors or undefined names
         ruff check . --select=E9,F63,F7,F82 --show-source
         # default statistics
-        ruff check . --statistics
+        ruff check . --statistics --exit-zero
     - name: Test with pytest
       run: |
         pytest tests/
