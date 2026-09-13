@@ -131,9 +131,10 @@ Contributions are welcome. Please read `CONTRIBUTING.md` (coming soon) and feel 
 Apache-2.0 License.
 
 ---
-
 <div align="center">
   <h3>☕ Support the Project</h3>
   <p>If StreamTrain helped you train models on your laptop without crashing, consider buying me a coffee!</p>
-  <a href="https://www.buymeacoffee.com/azlanabdulla" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+  <a href="https://www.buymeacoffee.com/azlanabdulla" target="_blank">
+    <img src="assets/support_banner.jpg" alt="Buy Me A Coffee" width="600">
+  </a>
 </div>
