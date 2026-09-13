@@ -127,8 +127,10 @@ StreamTrain does **not**:
 ## Contributing
 Contributions are welcome. Please read `CONTRIBUTING.md` (coming soon) and feel free to open PRs for integrations like Hugging Face Datasets or advanced checkpoint formats (safetensors).
 
----
+## License
+Apache-2.0 License.
 
+---
 <div align="center">
   <h3>☕ Support the Project</h3>
   <p>If StreamTrain helped you train models on your laptop without crashing, consider buying me a coffee!</p>
@@ -136,8 +138,3 @@ Contributions are welcome. Please read `CONTRIBUTING.md` (coming soon) and feel 
     <img src="assets/support_banner.jpg" alt="Buy Me A Coffee" width="600">
   </a>
 </div>
-
----
-
-## License
-Apache-2.0 License.
