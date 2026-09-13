@@ -1,0 +1,23 @@
+model:
+  name: synthetic_mlp
+
+training:
+  epochs: 3
+  batch_size: 64
+  gradient_accumulation: 2
+  precision: auto
+
+resources:
+  mode: laptop
+  max_ram: 4GB
+  max_vram: 2GB
+  max_cpu_percent: 80
+
+checkpoint:
+  directory: ./checkpoints
+  interval_steps: 10
+  keep_last: 3
+
+logging:
+  directory: ./logs
+  interval_steps: 5
